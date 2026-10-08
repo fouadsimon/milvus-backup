@@ -36,15 +36,6 @@ checksum:
 snapshot:
   version_template: "{{ incpatch .Version }}-next"
 
-brews:
-  - name: milvus-backup
-    directory: Formula
-    homepage: "https://github.com/zilliztech/milvus-backup"
-    repository:
-      owner: zilliztech
-      name: homebrew-tap
-      token: "{{ .Env.GITHUB_HOMEBREW_TOKEN }}"
-
 changelog:
   sort: asc
   use: github
